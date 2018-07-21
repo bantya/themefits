@@ -19,18 +19,35 @@
     },
     {
         "class": "sidebar_container",
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
+        "layer1.draw_center": true,
+        "settings": ["theme_contrast"],
+    },
+    {
+        "class": "sidebar_container",
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
         "layer1.tint": ["background", 255, 255, 255, 0.15]
     },
     {
         "class": "sidebar_container",
-        "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium_dark"]
+        }],
         // "layer0.tint": ["background", 0, 0, 0, 0.15],
         "layer1.tint": ["background", 0, 0, 0, 0.3]
     },
     {
         "class": "sidebar_container",
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
         "layer1.tint": ["background", 0, 0, 0, 0.2]
     },
     {
@@ -45,11 +62,15 @@
     {
         "class": "sidebar_tree",
         "platforms": ["windows"],
-        "row_padding": [8, 2],
+        "row_padding": [8, 3],
     },
     {
         "class": "sidebar_tree",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "dark_content": false,
     },
     {
@@ -65,24 +86,41 @@
         "class": "tree_row",
         "attributes": ["selectable", "hover"],
         "layer0.tint": [255, 255, 255, 0.06],
-        "layer0.opacity": { "target": 0.5, "speed": 2.0, "interpolation": "smoothstep" }
+        "layer0.opacity":
+        {
+            "target": 0.5,
+            "speed": 2.0,
+            "interpolation": "smoothstep"
+        }
     },
     {
         "class": "tree_row",
         "attributes": ["selectable", "hover"],
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
         "layer0.tint": [255, 255, 255, 0.08],
     },
     {
         "class": "tree_row",
         "attributes": ["selectable", "hover"],
-        "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium_dark"]
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.2],
     },
     {
         "class": "tree_row",
         "attributes": ["selectable", "hover"],
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": ["background", 1.0],
     },
     {
@@ -96,25 +134,41 @@
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
         "layer0.tint": [255, 255, 255, 0.16],
     },
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": ["background", 1.0],
     },
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium_dark"]
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.2],
     },
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
         "layer0.tint": ["background", 255, 255, 255, 0.1],
     },
     {
@@ -125,7 +179,11 @@
     },
     {
         "class": "sidebar_heading",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "fg": ["accent", 1.0]
     },
     {
@@ -135,22 +193,42 @@
     },
     {
         "class": "sidebar_label",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "fg": ["foreground", 0.7],
     },
     {
         "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "tree_row",
+            "attributes": ["selected"]
+        }],
         "fg": ["foreground", 0.9],
     },
     {
         "class": "sidebar_label",
-        "parents": [{"class": "window", "attributes": ["file_light"]}, {"class": "tree_row", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        },
+        {
+            "class": "tree_row",
+            "attributes": ["selected"]
+        }],
         "fg": ["foreground", 0.9],
     },
     {
         "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "parents": [
+        {
+            "class": "tree_row",
+            "attributes": ["expandable"]
+        }],
         "settings": ["bold_folder_labels"],
         "font.bold": true
     },
@@ -171,13 +249,21 @@
     },
     {
         "class": "icon_folder",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": ["foreground", 0.75],
         "layer0.opacity": 1.0,
     },
     {
         "class": "icon_folder",
-        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "parents": [
+        {
+            "class": "tree_row",
+            "attributes": ["expanded"]
+        }],
         "layer0.texture": "Theme - Default/common/dark/folder_open.png",
         "content_margin": [9, 8]
     },
@@ -185,8 +271,7 @@
         "class": "icon_folder_loading",
         "layer0.texture":
         {
-            "keyframes":
-            [
+            "keyframes": [
                 "Theme - Default/common/dark/folder_loading_01.png",
                 "Theme - Default/common/dark/folder_loading_02.png",
                 "Theme - Default/common/dark/folder_loading_03.png",
@@ -216,7 +301,11 @@
     },
     {
         "class": "icon_folder_loading",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0],
         "layer0.opacity": 0.5,
     },
@@ -228,7 +317,11 @@
     },
     {
         "class": "icon_folder_dup",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0],
         "layer0.opacity": 0.5,
     },
@@ -240,7 +333,11 @@
     },
     {
         "class": "icon_file_type",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": ["foreground", 0.75],
         "layer0.opacity": 1.0,
     },
@@ -250,15 +347,20 @@
         "class": "tabset_control",
         // background
         "layer0.opacity": 1.0,
-        "layer0.tint":["background", 0, 0, 0, 0.05],
+        "layer0.tint": ["background", 0, 0, 0, 0.05],
         // sep line
         "layer1.opacity": 1.0,
         "layer1.draw_center": false,
         "layer1.inner_margin": [0, 0, 0, 1],
-        "layer1.tint":["background", 0, 0, 0, 0.2],
+        "layer1.tint": ["background", 0, 0, 0, 0.2],
         "content_margin": [-1, 0, 8, 0],
         "tab_overlap": 1,
-        "tab_height": 34
+        "tab_height": 34,
+    },
+    {
+        "class": "tabset_control",
+        "tab_width": 0,
+        "settings": ["theme_tabs_fluid"],
     },
     {
         "class": "tabset_control",
@@ -268,22 +370,22 @@
     {
         "class": "tabset_control",
         "attributes": ["file_light"],
-        "layer1.tint":["background", 0, 0, 0, 0.15],
+        "layer1.tint": ["background", 0, 0, 0, 0.15],
     },
     {
         "class": "tabset_control",
         "attributes": ["file_medium"],
-        "layer1.tint":["background", 0, 0, 0, 0.2],
+        "layer1.tint": ["background", 0, 0, 0, 0.2],
     },
     {
         "class": "tabset_control",
         "attributes": ["file_medium_dark"],
-        "layer1.tint":["background", 0, 0, 0, 0.3],
+        "layer1.tint": ["background", 0, 0, 0, 0.3],
     },
     {
         "class": "tabset_control",
         "attributes": ["file_dark"],
-        "layer1.tint":["background", 255, 255, 255, 0.15],
+        "layer1.tint": ["background", 255, 255, 255, 0.15],
     },
     {
         "class": "tab_control",
@@ -291,7 +393,7 @@
         "layer0.tint": ["background", 0],
         // sep line
         "layer1.opacity": 1,
-        "layer1.tint":["background", 0, 0, 0, 0.2],
+        "layer1.tint": ["background", 0, 0, 0, 0.2],
         "layer1.draw_center": false,
         "layer1.inner_margin": [1, 0, 1, 1],
         "content_margin": [16, 8, 10, 6]
@@ -299,17 +401,17 @@
     {
         "class": "tab_control",
         "attributes": ["file_light"],
-        "layer1.tint":["background", 0, 0, 0, 0.15],
+        "layer1.tint": ["background", 0, 0, 0, 0.15],
     },
     {
         "class": "tab_control",
         "attributes": ["file_medium_dark"],
-        "layer1.tint":["background", 0, 0, 0, 0.3],
+        "layer1.tint": ["background", 0, 0, 0, 0.3],
     },
     {
         "class": "tab_control",
         "attributes": ["file_dark"],
-        "layer1.tint":["background", 255, 255, 255, 0.15],
+        "layer1.tint": ["background", 255, 255, 255, 0.15],
     },
     {
         "class": "tab_control",
@@ -338,7 +440,7 @@
         "class": "tab_control",
         "attributes": ["dirty", "selected"],
         "settings": ["highlight_modified_tabs"],
-        "layer2.opacity": 1.0
+        "layer2.opacity": 0.15
     },
     {
         "class": "tab_label",
@@ -346,22 +448,38 @@
     },
     {
         "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "tab_control",
+            "attributes": ["file_light"]
+        }],
         "fg": [140, 140, 140]
     },
     {
         "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "tab_control",
+            "attributes": ["file_medium"]
+        }],
         "fg": [192, 192, 192]
     },
     {
         "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "tab_control",
+            "attributes": ["selected"]
+        }],
         "fg": [255, 255, 255]
     },
     {
         "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["selected", "file_light"]}],
+        "parents": [
+        {
+            "class": "tab_control",
+            "attributes": ["selected", "file_light"]
+        }],
         "fg": [50, 50, 50]
     },
     {
@@ -375,37 +493,77 @@
         "layer0.texture": "Theme - Default/common/dark/tab_close.png",
         "layer1.texture": "Theme - Default/common/dark/tab_dirty.png",
         "content_margin": [10, 9],
-        "layer0.opacity": { "target": 0.0, "speed": 6, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.0,
+            "speed": 6,
+            "interpolation": "smoothstep"
+        },
         "layer1.opacity": 0,
         "layer0.tint": ["foreground", 0.7]
     },
     {
         "class": "tab_close_button",
-        "parents": [{"class": "tab_control","attributes": ["hover"]}],
-        "layer0.opacity": { "target": 0.8, "speed": 4, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "tab_control",
+            "attributes": ["hover"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 0.8,
+            "speed": 4,
+            "interpolation": "smoothstep"
+        },
         "layer1.opacity": 0
     },
     {
         "class": "tab_close_button",
-        "parents": [{"class": "tab_control","attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "tab_control",
+            "attributes": ["selected"]
+        }],
         "layer1.opacity": 0.6
     },
     {
         "class": "tab_close_button",
-        "parents": [{"class": "tab_control","attributes": ["selected","hover"]}],
-        "layer0.opacity": { "target": 0.8, "speed": 4, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "tab_control",
+            "attributes": ["selected", "hover"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 0.8,
+            "speed": 4,
+            "interpolation": "smoothstep"
+        },
         "layer1.opacity": 0
     },
-    { // when edting...
+    { // when editing...
         "class": "tab_close_button",
-        "parents": [{"class": "tab_control","attributes": ["dirty"]}],
+        "parents": [
+        {
+            "class": "tab_control",
+            "attributes": ["dirty"]
+        }],
         "layer1.opacity": 1,
         "layer1.tint": ["accent", 1.0]
     },
     {
         "class": "tab_close_button",
-        "parents": [{"class": "tab_control","attributes": ["dirty","hover"]}],
-        "layer0.opacity": { "target": 1.0, "speed": 4, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "tab_control",
+            "attributes": ["dirty", "hover"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 1.0,
+            "speed": 4,
+            "interpolation": "smoothstep"
+        },
         "layer1.opacity": 0
     },
 
@@ -421,14 +579,24 @@
     {
         "class": "show_tabs_dropdown_button",
         "layer0.texture": "Theme - Default/common/light/tab_dropdown.png",
-        "layer0.opacity": { "target": 0.7, "speed": 2.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.7,
+            "speed": 2.0,
+            "interpolation": "smoothstep"
+        },
         "layer0.tint": ["foreground", 0.6],
         "content_margin": [9, 10]
     },
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 0.9, "speed": 2.0, "interpolation": "smoothstep" }
+        "layer0.opacity":
+        {
+            "target": 0.9,
+            "speed": 2.0,
+            "interpolation": "smoothstep"
+        }
     },
 
     // Quick Panel
@@ -440,17 +608,29 @@
     },
     {
         "class": "overlay_control",
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
         "layer0.tint": ["background", 255, 255, 255, 0.05],
     },
     {
         "class": "overlay_control",
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.2],
     },
     {
         "class": "overlay_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.07],
     },
     {
@@ -462,17 +642,29 @@
     },
     {
         "class": "quick_panel",
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
         "layer0.tint": ["background", 255, 255, 255, 0.08],
     },
     {
         "class": "quick_panel",
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.2],
     },
     {
         "class": "quick_panel",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.07],
         "dark_content": false
     },
@@ -498,7 +690,11 @@
     },
     {
         "class": "quick_panel_row",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "attributes": ["selected"],
         "layer0.tint": [255, 255, 255],
         "layer0.opacity": 0.35
@@ -512,7 +708,11 @@
     },
     {
         "class": "quick_panel_label",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "fg": ["background", 0, 0, 0, 0.6],
         "match_fg": ["accent", 0.7],
         "selected_fg": ["background", 0, 0, 0, 0.8],
@@ -520,7 +720,10 @@
     },
     {
         "class": "quick_panel_label",
-        "parents": [{"class": "mini_quick_panel_row"}],
+        "parents": [
+        {
+            "class": "mini_quick_panel_row"
+        }],
         "font.size": 14
     },
     {
@@ -532,7 +735,11 @@
     },
     {
         "class": "quick_panel_path_label",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "fg": ["background", 0, 0, 0, 0.5],
         "match_fg": ["background", 0, 0, 0, 0.6],
         "selected_fg": ["background", 0, 0, 0, 0.5],
@@ -547,22 +754,38 @@
     },
     {
         "class": "grid_layout_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "border_color": ["background", 0, 0, 0, 0.15],
     },
     {
         "class": "grid_layout_control",
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
         "border_color": ["background", 0, 0, 0, 0.2],
     },
     {
         "class": "grid_layout_control",
-        "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium_dark"]
+        }],
         "border_color": ["background", 0, 0, 0, 0.3],
     },
     {
         "class": "grid_layout_control",
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
         "border_color": ["background", 255, 255, 255, 0.15],
     },
     {
@@ -575,27 +798,47 @@
         "class": "minimap_control",
         "settings": ["!always_show_minimap_viewport"],
         "viewport_color": [128, 128, 128, 0.25],
-        "viewport_opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+        "viewport_opacity":
+        {
+            "target": 0.0,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "minimap_control",
         "attributes": ["hover"],
         "settings": ["!always_show_minimap_viewport"],
         "viewport_color": [128, 128, 128, 0.25],
-        "viewport_opacity": { "target": 0.8, "speed": 20.0, "interpolation": "smoothstep" },
+        "viewport_opacity":
+        {
+            "target": 0.8,
+            "speed": 20.0,
+            "interpolation": "smoothstep"
+        },
     },
 
     // Code Folding Button
     {
         "class": "fold_button_control",
         "layer0.texture": "Theme - Default/common/dark/fold_closed.png",
-        "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.4,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": 8
     },
     {
         "class": "fold_button_control",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" }
+        "layer0.opacity":
+        {
+            "target": 0.6,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        }
     },
     {
         "class": "fold_button_control",
@@ -604,12 +847,20 @@
     },
     {
         "class": "fold_button_control",
-        "parents": [{"class": "text_area_control", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "text_area_control",
+            "attributes": ["file_light"]
+        }],
         "layer0.texture": "Theme - Default/common/light/fold_closed.png",
     },
     {
         "class": "fold_button_control",
-        "parents": [{"class": "text_area_control", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "text_area_control",
+            "attributes": ["file_light"]
+        }],
         "attributes": ["expanded"],
         "layer0.texture": "Theme - Default/common/light/fold_opened.png",
     },
@@ -629,13 +880,19 @@
     },
     {
         "class": "scroll_bar_control",
-        "parents": [{"class": "popup_control auto_complete_popup"}],
+        "parents": [
+        {
+            "class": "popup_control auto_complete_popup"
+        }],
         "tint_modifier": [0, 0, 0, 0.0],
     },
     {
         "class": "scroll_bar_control",
         "attributes": ["dark"],
-        "parents": [{"class": "popup_control auto_complete_popup"}],
+        "parents": [
+        {
+            "class": "popup_control auto_complete_popup"
+        }],
         "tint_modifier": [255, 255, 255, 0.0],
     },
     {
@@ -645,7 +902,11 @@
     },
     {
         "class": "table_row",
-        "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "auto_complete",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": ["background", 1.0],
         "layer0.opacity": 0.0
     },
@@ -665,7 +926,7 @@
 
     // Panels
     {
-        "class": "panel_control", 
+        "class": "panel_control",
         "layer0.opacity": 1,
         "layer0.tint": ["background", 0, 0, 0, 0.05],
         "layer1.inner_margin": [0, 1, 0, 0],
@@ -675,43 +936,74 @@
     },
     {
         "class": "panel_control",
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
         "layer1.tint": ["background", 255, 255, 255, 0.15],
     },
     {
         "class": "panel_control",
-        "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium_dark"]
+        }],
         "layer1.tint": ["background", 0, 0, 0, 0.3],
     },
     {
         "class": "panel_control",
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
         "layer1.tint": ["background", 0, 0, 0, 0.20],
     },
     {
         "class": "panel_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer1.tint": ["background", 0, 0, 0, 0.15],
     },
 
     {
         "class": "panel_control",
-        "parents": [{"class": "switch_project_window"}],
+        "parents": [
+        {
+            "class": "switch_project_window"
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.4]
     },
     {
         "class": "panel_control",
-        "parents": [{"class": "switch_project_window", "attributes": ["file_dark"]}],
+        "parents": [
+        {
+            "class": "switch_project_window",
+            "attributes": ["file_dark"]
+        }],
         "layer0.tint": ["background", 255, 255, 255, 0.15]
     },
     {
         "class": "panel_control",
-        "parents": [{"class": "switch_project_window", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "switch_project_window",
+            "attributes": ["file_medium"]
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.2]
     },
     {
         "class": "panel_control",
-        "parents": [{"class": "switch_project_window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "switch_project_window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.1]
     },
     {
@@ -724,13 +1016,23 @@
         "class": "panel_close_button",
         "layer0.texture": "Theme - Default/common/dark/panel_close.png",
         "layer0.tint": ["foreground", 1.0],
-        "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.4,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": 8
     },
     {
         "class": "panel_close_button",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.6,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
 
     // Dialogs (check update)
@@ -764,7 +1066,11 @@
     },
     {
         "class": "progress_bar_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0, 0.1],
         "layer0.opacity": 1.0
     },
@@ -776,7 +1082,11 @@
     },
     {
         "class": "progress_gauge_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0, 0.2],
         "layer0.opacity": 1.0
     },
@@ -794,7 +1104,10 @@
     },
     {
         "class": "scroll_area_control",
-        "parents": [{"class": "sidebar_container"}],
+        "parents": [
+        {
+            "class": "sidebar_container"
+        }],
         "content_margin": [0, 10, 0, 10]
     },
     {
@@ -813,7 +1126,7 @@
         "settings": ["!overlay_scroll_bars"],
         "layer0.opacity": 1.0
     },
-    {   // vertical scroll
+    { // vertical scroll
         "class": "scroll_track_control",
         "layer0.texture": "Theme - Default/common/light/scroll_bar.png",
         "layer0.opacity": 1.0,
@@ -868,48 +1181,79 @@
     // Scroll Bars (Sidebar)
     {
         "class": "scroll_bar_control",
-        "parents": [{"class": "sidebar_container"}],
+        "parents": [
+        {
+            "class": "sidebar_container"
+        }],
         "layer0.opacity": 0.0,
     },
     {
         "class": "scroll_corner_control",
-        "parents": [{"class": "sidebar_container"}],
+        "parents": [
+        {
+            "class": "sidebar_container"
+        }],
         "layer0.opacity": 0.0,
     },
     {
         "class": "puck_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}, {"class": "sidebar_container"}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        },
+        {
+            "class": "sidebar_container"
+        }],
         "layer0.opacity": 0.7,
     },
     // Scroll Bars (Switch Project)
     {
         "class": "scroll_bar_control",
-        "parents": [{"class": "switch_project_window"}],
+        "parents": [
+        {
+            "class": "switch_project_window"
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.4],
         "tint_index": -1
     },
     {
         "class": "scroll_bar_control",
-        "parents": [{"class": "switch_project_window", "attributes": ["file_dark"]}],
+        "parents": [
+        {
+            "class": "switch_project_window",
+            "attributes": ["file_dark"]
+        }],
         "layer0.tint": ["background", 255, 255, 255, 0.15],
         "tint_index": -1
     },
     {
         "class": "scroll_bar_control",
-        "parents": [{"class": "switch_project_window", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "switch_project_window",
+            "attributes": ["file_medium"]
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.2],
         "tint_index": -1
     },
     {
         "class": "scroll_bar_control",
-        "parents": [{"class": "switch_project_window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "switch_project_window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": ["background", 0, 0, 0, 0.1],
         "tint_index": -1
     },
     // Scroll Bars (Overlay)
     {
         "class": "scroll_bar_control",
-        "parents": [{"class": "overlay_control"}],
+        "parents": [
+        {
+            "class": "overlay_control"
+        }],
         "layer0.opacity": 0.0,
         "content_margin": [4, 0, 0, 0]
     },
@@ -923,97 +1267,210 @@
     },
     {
         "class": "text_line_control",
-        "parents": [{"class": "switch_project_window"}],
+        "parents": [
+        {
+            "class": "switch_project_window"
+        }],
         "layer0.opacity": 1.0,
         "layer0.tint": ["background", 1.0],
     },
     {
         "class": "dropdown_button_control",
         "layer0.texture": "Theme - Default/common/dark/dropdown_button.png",
-        "layer0.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.3,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": [9, 8, 9, 8]
     },
     {
         "class": "dropdown_button_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0],
     },
     {
         "class": "dropdown_button_control",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 0.5, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.5,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
 
     // Buttons
     {
         "class": "button_control",
         "layer0.texture": "Theme - Default/common/light/button.png",
-        "layer0.opacity": { "target": 0.1, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.1,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
         "layer0.inner_margin": 4,
         "min_size": [80, 0],
         "content_margin": [10, 6]
     },
     {
         "class": "button_control",
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
-        "layer0.opacity": { "target": 0.1, "speed": 4.0, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 0.1,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "button_control",
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
-        "layer0.opacity": { "target": 0.2, "speed": 4.0, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 0.2,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "button_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
-        "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 0.4,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
         "layer0.tint": [255, 255, 255],
     },
     {
         "class": "button_control",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 0.2, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.2,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "button_control",
         "attributes": ["hover"],
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
-        "layer0.opacity": { "target": 0.2, "speed": 4.0, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 0.2,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "button_control",
         "attributes": ["hover"],
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
-        "layer0.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 0.3,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "button_control",
         "attributes": ["hover"],
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
-        "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 0.6,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "layer0.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.3,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
-        "layer0.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 0.3,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
-        "layer0.opacity": { "target": 0.5, "speed": 4.0, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 0.5,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
-        "layer0.opacity": { "target": 0.9, "speed": 4.0, "interpolation": "smoothstep" },
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
+        "layer0.opacity":
+        {
+            "target": 0.9,
+            "speed": 4.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "icon_button_group",
@@ -1028,11 +1485,19 @@
     },
     {
         "class": "icon_button_control",
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
     },
     {
         "class": "icon_button_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [255, 255, 255],
     },
     {
@@ -1043,41 +1508,71 @@
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
         "layer0.opacity": 0.1
     },
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
         "layer0.opacity": 0.1
     },
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.opacity": 0.3
     },
     {
         "class": "icon_regex",
         "layer0.texture": "Theme - Default/common/dark/icon_regex.png",
         "layer0.tint": [255, 255, 255],
-        "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.7,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": [14, 11],
     },
     {
         "class": "icon_regex",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0, 0.7],
     },
     {
         "class": "icon_regex",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 1.0,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "icon_regex",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
         "layer0.tint": ["accent", 1.0],
         "layer0.opacity": 1.0,
     },
@@ -1085,22 +1580,40 @@
         "class": "icon_case",
         "layer0.texture": "Theme - Default/common/dark/icon_case_sensitive.png",
         "layer0.tint": [255, 255, 255],
-        "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.7,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": [14, 11]
     },
     {
         "class": "icon_case",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0, 0.7],
     },
     {
         "class": "icon_case",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 1.0,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "icon_case",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
         "layer0.tint": ["accent", 1.0],
         "layer0.opacity": 1.0,
     },
@@ -1108,22 +1621,40 @@
         "class": "icon_whole_word",
         "layer0.texture": "Theme - Default/common/dark/icon_whole_word.png",
         "layer0.tint": [255, 255, 255],
-        "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.7,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": [14, 11]
     },
     {
         "class": "icon_whole_word",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0, 0.7],
     },
     {
         "class": "icon_whole_word",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 1.0,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "icon_whole_word",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
         "layer0.tint": ["accent", 1.0],
         "layer0.opacity": 1.0,
     },
@@ -1131,22 +1662,40 @@
         "class": "icon_wrap",
         "layer0.texture": "Theme - Default/common/dark/icon_wrap.png",
         "layer0.tint": [255, 255, 255],
-        "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.7,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": [14, 11]
     },
     {
         "class": "icon_wrap",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0, 0.7],
     },
     {
         "class": "icon_wrap",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 1.0,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "icon_wrap",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
         "layer0.tint": ["accent", 1.0],
         "layer0.opacity": 1.0,
     },
@@ -1154,22 +1703,40 @@
         "class": "icon_in_selection",
         "layer0.texture": "Theme - Default/common/dark/icon_in_selection.png",
         "layer0.tint": [255, 255, 255],
-        "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.7,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": [14, 11]
     },
     {
         "class": "icon_in_selection",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0, 0.7],
     },
     {
         "class": "icon_in_selection",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 1.0,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "icon_in_selection",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
         "layer0.tint": ["accent", 1.0],
         "layer0.opacity": 1.0,
     },
@@ -1177,22 +1744,40 @@
         "class": "icon_highlight",
         "layer0.texture": "Theme - Default/common/dark/icon_highlight_matches.png",
         "layer0.tint": [255, 255, 255],
-        "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.7,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": [14, 11]
     },
     {
         "class": "icon_highlight",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0, 0.7],
     },
     {
         "class": "icon_highlight",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 1.0,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "icon_highlight",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
         "layer0.tint": ["accent", 1.0],
         "layer0.opacity": 1.0,
     },
@@ -1200,22 +1785,40 @@
         "class": "icon_preserve_case",
         "layer0.texture": "Theme - Default/common/dark/icon_preserve_case.png",
         "layer0.tint": [255, 255, 255],
-        "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.7,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": [14, 11]
     },
     {
         "class": "icon_preserve_case",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0, 0.7],
     },
     {
         "class": "icon_preserve_case",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 1.0,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "icon_preserve_case",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
         "layer0.tint": ["accent", 1.0],
         "layer0.opacity": 1.0,
     },
@@ -1223,22 +1826,40 @@
         "class": "icon_context",
         "layer0.texture": "Theme - Default/common/dark/icon_context.png",
         "layer0.tint": [255, 255, 255],
-        "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.7,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": [14, 11]
     },
     {
         "class": "icon_context",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0, 0.7],
     },
     {
         "class": "icon_context",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 1.0,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "icon_context",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
         "layer0.tint": ["accent", 1.0],
         "layer0.opacity": 1.0,
     },
@@ -1246,22 +1867,40 @@
         "class": "icon_use_buffer",
         "layer0.texture": "Theme - Default/common/dark/icon_use_buffer.png",
         "layer0.tint": [255, 255, 255],
-        "layer0.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.7,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
         "content_margin": [14, 11]
     },
     {
         "class": "icon_use_buffer",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer0.tint": [0, 0, 0, 0.7],
     },
     {
         "class": "icon_use_buffer",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 1.0,
+            "speed": 5.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "icon_use_buffer",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "parents": [
+        {
+            "class": "icon_button_control",
+            "attributes": ["selected"]
+        }],
         "layer0.tint": ["accent", 1.0],
         "layer0.opacity": 1.0,
     },
@@ -1274,7 +1913,11 @@
     },
     {
         "class": "label_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "fg": ["background", 0, 0, 0, 0.8],
     },
     {
@@ -1284,18 +1927,32 @@
     },
     {
         "class": "title_label_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "fg": ["background", 0, 0, 0, 0.9],
     },
     {
         "class": "label_control",
-        "parents": [{"class": "button_control"}],
+        "parents": [
+        {
+            "class": "button_control"
+        }],
         "shadow_color": [0, 0, 0, 0.1],
         "shadow_offset": [0, 1]
     },
     {
         "class": "label_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}, {"class": "button_control"}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        },
+        {
+            "class": "button_control"
+        }],
         "shadow_color": [255, 255, 255, 0.1],
     },
 
@@ -1325,35 +1982,61 @@
     },
     {
         "class": "status_bar",
-        "parents": [{"class": "window", "attributes": ["file_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_dark"]
+        }],
         "layer1.tint": ["background", 255, 255, 255, 0.15],
     },
-    { 
+    {
         "class": "status_bar",
-        "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium_dark"]
+        }],
         "layer1.tint": ["background", 0, 0, 0, 0.3],
     },
     {
         "class": "status_bar",
-        "parents": [{"class": "window", "attributes": ["file_medium"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_medium"]
+        }],
         "layer1.tint": ["background", 0, 0, 0, 0.20],
     },
     {
         "class": "status_bar",
-        "parents": [{"class": "window", "attributes": ["file_light"]}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        }],
         "layer1.tint": ["background", 0, 0, 0, 0.15],
     },
     {
         "class": "panel_button_control",
         "layer0.texture": "Theme - Default/common/dark/panels_button.png",
-        "layer0.opacity": { "target": 0.5, "speed": 2.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.5,
+            "speed": 2.0,
+            "interpolation": "smoothstep"
+        },
         "layer0.tint": ["foreground", 1.0],
         "content_margin": [12, 11]
     },
     {
         "class": "panel_button_control",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 0.7, "speed": 2.0, "interpolation": "smoothstep" },
+        "layer0.opacity":
+        {
+            "target": 0.7,
+            "speed": 2.0,
+            "interpolation": "smoothstep"
+        },
     },
     {
         "class": "status_container",
@@ -1366,7 +2049,10 @@
     },
     {
         "class": "label_control",
-        "parents": [{"class": "status_bar"}],
+        "parents": [
+        {
+            "class": "status_bar"
+        }],
         "fg": ["background", 255, 255, 255, 0.7],
         "font.size": 11,
         "shadow_color": [0, 0, 0, 0.18],
@@ -1374,7 +2060,14 @@
     },
     {
         "class": "label_control",
-        "parents": [{"class": "window", "attributes": ["file_light"]}, {"class": "status_bar"}],
+        "parents": [
+        {
+            "class": "window",
+            "attributes": ["file_light"]
+        },
+        {
+            "class": "status_bar"
+        }],
         "fg": ["background", 0, 0, 0, 0.7],
         "shadow_color": [255, 255, 255, 0.18],
     },
