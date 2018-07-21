@@ -19,8 +19,16 @@ Using **Package Control**: search "Theme - Fits" \
   - open `Preferences -> Browse Packages...`
   - create new folder named `Theme - Fits`
   - download package and unzip into this folder
+  
+### Settings
+The Theme Fits supports the customizations using two settings:
 
-### Customization
+1. **theme_contrast**: Which toggles the contrast mode for the sidebar.
+2. **theme_tabs_fluid**: Which toggles the tab width fluidity (autowidth ability).
+
+These settings has to be added in the global **Preferences.sublime-settings** file.
+
+### Further Customization
 
 #### File Icons
 Please install [A File Icon](https://packagecontrol.io/packages/A%20File%20Icon) to get more file-specific icons.
@@ -36,12 +44,4 @@ Please install [A File Icon](https://packagecontrol.io/packages/A%20File%20Icon)
 You can check the official docs -> [Documentation Themes](http://www.sublimetext.com/docs/3/themes.html)
 
 ### Credits
-
-Based on [SyncedSidebarBg](https://packagecontrol.io/packages/SyncedSidebarBg) by aziz and Theme - Default.
-
-### Contact Me
-- Github: [Issues](https://github.com/xxxzc/themefits/issues)
-- Gmail: xiuscong@gmail.com
-
-
-Sorry for my poor English.
+- [zicong xie](https://github.com/xxxzc/themefits)
